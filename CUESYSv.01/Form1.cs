@@ -104,6 +104,7 @@ namespace CUESYSv._01
                 case "view customers":
                     //show all customers
                     dgRoomBookingsSummary.Visible = true;
+                    button2.Visible = true;
                     dbReturn("SELECT * FROM `tblCustomer`");
                     break;
                 case "Exit":
@@ -407,6 +408,12 @@ namespace CUESYSv._01
         {
             string id = dgRoomBookingsSummary.SelectedCells[0].Value.ToString();
             mysqlConn.deleteBooking(id);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string id = dgRoomBookingsSummary.SelectedCells[0].Value.ToString();
+            mysqlConn.deleteCustomer(id);
         }
         ///// EVENTS END ///////////////////////////////////////////////////////////
     }

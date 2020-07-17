@@ -93,6 +93,7 @@
             this.tbCost = new System.Windows.Forms.TextBox();
             this.lbBookingInfo = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRoomBookingsSummary)).BeginInit();
             this.mainMenu.SuspendLayout();
@@ -221,7 +222,7 @@
             this.roomsToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(1200, 36);
+            this.mainMenu.Size = new System.Drawing.Size(1200, 33);
             this.mainMenu.TabIndex = 8;
             // 
             // fileToolStripMenuItem
@@ -261,7 +262,7 @@
             this.createCustomerToolStripMenuItem,
             this.viewCustomersToolStripMenuItem});
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(113, 32);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(113, 29);
             this.customerToolStripMenuItem.Text = "Customers";
             // 
             // createCustomerToolStripMenuItem
@@ -274,7 +275,7 @@
             // viewCustomersToolStripMenuItem
             // 
             this.viewCustomersToolStripMenuItem.Name = "viewCustomersToolStripMenuItem";
-            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(246, 34);
+            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.viewCustomersToolStripMenuItem.Text = "View Customers";
             this.viewCustomersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersToolStripMenuItem_Click);
             // 
@@ -760,11 +761,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(204, 62);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(125, 50);
+            this.button2.TabIndex = 45;
+            this.button2.Text = "Delete Customer";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btBook);
             this.Controls.Add(this.tbTime);
@@ -889,6 +901,7 @@
         private System.Windows.Forms.TextBox tbCost;
         private System.Windows.Forms.Label lbBookingInfo;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
