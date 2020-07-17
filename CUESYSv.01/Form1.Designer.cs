@@ -33,7 +33,6 @@
             this.tbUserPass = new System.Windows.Forms.TextBox();
             this.lbUserName = new System.Windows.Forms.Label();
             this.lbUserPass = new System.Windows.Forms.Label();
-            this.lbCueSys = new System.Windows.Forms.Label();
             this.btLogin = new System.Windows.Forms.Button();
             this.panClock = new System.Windows.Forms.Panel();
             this.lbClockSeconds = new System.Windows.Forms.Label();
@@ -138,17 +137,6 @@
             this.lbUserPass.TabIndex = 3;
             this.lbUserPass.Text = "Password";
             // 
-            // lbCueSys
-            // 
-            this.lbCueSys.AutoSize = true;
-            this.lbCueSys.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCueSys.Location = new System.Drawing.Point(345, 18);
-            this.lbCueSys.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbCueSys.Name = "lbCueSys";
-            this.lbCueSys.Size = new System.Drawing.Size(418, 112);
-            this.lbCueSys.TabIndex = 4;
-            this.lbCueSys.Text = "CUE SYS";
-            // 
             // btLogin
             // 
             this.btLogin.Location = new System.Drawing.Point(303, 414);
@@ -243,7 +231,7 @@
             this.logoutToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(54, 32);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // viewDevLogsToolStripMenuItem
@@ -273,7 +261,7 @@
             this.createCustomerToolStripMenuItem,
             this.viewCustomersToolStripMenuItem});
             this.customerToolStripMenuItem.Name = "customerToolStripMenuItem";
-            this.customerToolStripMenuItem.Size = new System.Drawing.Size(113, 29);
+            this.customerToolStripMenuItem.Size = new System.Drawing.Size(113, 32);
             this.customerToolStripMenuItem.Text = "Customers";
             // 
             // createCustomerToolStripMenuItem
@@ -296,7 +284,7 @@
             this.bookRoomToolStripMenuItem,
             this.viewBookingsToolStripMenuItem});
             this.roomsToolStripMenuItem.Name = "roomsToolStripMenuItem";
-            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(80, 29);
+            this.roomsToolStripMenuItem.Size = new System.Drawing.Size(80, 32);
             this.roomsToolStripMenuItem.Text = "Flights";
             this.roomsToolStripMenuItem.Click += new System.EventHandler(this.roomsToolStripMenuItem_Click);
             // 
@@ -814,7 +802,6 @@
             this.Controls.Add(this.dgRoomBookingsSummary);
             this.Controls.Add(this.panClock);
             this.Controls.Add(this.btLogin);
-            this.Controls.Add(this.lbCueSys);
             this.Controls.Add(this.lbUserPass);
             this.Controls.Add(this.lbUserName);
             this.Controls.Add(this.tbUserPass);
@@ -842,7 +829,6 @@
         private System.Windows.Forms.TextBox tbUserPass;
         private System.Windows.Forms.Label lbUserName;
         private System.Windows.Forms.Label lbUserPass;
-        private System.Windows.Forms.Label lbCueSys;
         private System.Windows.Forms.Button btLogin;
         private System.Windows.Forms.Panel panClock;
         private System.Windows.Forms.Label lbClockSeconds;
