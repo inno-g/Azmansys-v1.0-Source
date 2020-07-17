@@ -106,7 +106,7 @@ namespace CUESYSv._01
         {
             connOpen();
             MySqlCommand comm = conn.CreateCommand();
-            comm.CommandText = "DELETE FROM `tblBookings` WHERE `tblBookings`.`bookingID` = @id";
+            comm.CommandText = "DELETE FROM `tblBookings` WHERE `tblBookings`.`id` = @id";
             comm.Parameters.AddWithValue("@id", id);
             comm.ExecuteNonQuery();
             connClose();
@@ -119,6 +119,7 @@ namespace CUESYSv._01
             comm.Parameters.AddWithValue("@id", id);
             comm.ExecuteNonQuery();
             connClose();
+            MessageBox.Show("Selected booking is deleted");
         }
     }
 }

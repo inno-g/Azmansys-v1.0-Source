@@ -63,6 +63,7 @@ namespace CUESYSv._01
                     break;
                 case "landing":
                     dgRoomBookingsSummary.Visible = true;
+                    button1.Visible = true;
                     dbReturn("SELECT * FROM `tblBookings`");
                     break;
                 case "Book Room":
@@ -406,7 +407,8 @@ namespace CUESYSv._01
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            string id = dgRoomBookingsSummary.SelectedCells[0].Value.ToString();
+            mysqlConn.deleteBooking(id);
         }
         ///// EVENTS END ///////////////////////////////////////////////////////////
     }

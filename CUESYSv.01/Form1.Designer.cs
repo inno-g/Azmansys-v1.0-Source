@@ -94,7 +94,6 @@
             this.tbCost = new System.Windows.Forms.TextBox();
             this.lbBookingInfo = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panClock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgRoomBookingsSummary)).BeginInit();
             this.mainMenu.SuspendLayout();
@@ -234,7 +233,7 @@
             this.roomsToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(1200, 33);
+            this.mainMenu.Size = new System.Drawing.Size(1200, 36);
             this.mainMenu.TabIndex = 8;
             // 
             // fileToolStripMenuItem
@@ -304,7 +303,7 @@
             // bookRoomToolStripMenuItem
             // 
             this.bookRoomToolStripMenuItem.Name = "bookRoomToolStripMenuItem";
-            this.bookRoomToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.bookRoomToolStripMenuItem.Size = new System.Drawing.Size(230, 34);
             this.bookRoomToolStripMenuItem.Text = "Book Flight";
             this.bookRoomToolStripMenuItem.Click += new System.EventHandler(this.bookRoomToolStripMenuItem_Click);
             // 
@@ -765,7 +764,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 49);
+            this.button1.Location = new System.Drawing.Point(18, 62);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(102, 50);
             this.button1.TabIndex = 44;
@@ -773,21 +772,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(162, 48);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 51);
-            this.button2.TabIndex = 45;
-            this.button2.Text = " b";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btBook);
             this.Controls.Add(this.tbTime);
@@ -914,7 +903,6 @@
         private System.Windows.Forms.TextBox tbCost;
         private System.Windows.Forms.Label lbBookingInfo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
     }
 }
 
